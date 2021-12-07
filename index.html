@@ -1,20 +1,113 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-      
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ps-container">
+        <div class="sidebar-wrapper custom-scrollbar" id="custom-scrollbar">
+            <p class="ps-title">Doctor Prescription</p>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#" data-toggle="collapse" aria-expanded="false"
+                        data-target="#submenuPages">Prescriptions </a>
+                    <div id="submenuPages" class="collapse submenu ">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">New Prescription</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Prescription List</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Patients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Drug & Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Pathology Tests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Appointments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">User Management</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content-section">
+            <div class="content-wrapper">
+                <div class="dashboard-element-wrapper">
+                    <div class="top-header d-flex justify-content-between align-items-center">
+                        <div class=""></div>
+                        <div class="d-flex align-items-center">
+                            <img src="images/doctor.png" alt="" class="pr-2 doctor-img">
+                            <p class="pr-3">Dr. Ahsan ul haq Bari VAI</p>
+                        </div>
+                    </div>
+                    <div class="content-body">
+                        <div class="row pt-5">
+                            <div class="col-md-4 offset-md-3 p-0">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="create-new px-5 py-3">
+                                            <h4 class="py-4 text-center">Create New Prescription</h4>
+                                            <form action="">
+                                                <label for="">Enter Patient ID/Name/Mobile</label>
+                                                <input type="text" class="form-control">
+                                                <a href="#" class="add_item">Add New Patient</a>
+                                                <button class="large-btn mt-3">Blank Prescription</button>
+                                                <button class="large-btn mt-3 bg_bd">Edit From Last Prescription</button>
+                                                <button class="default-bg text-white submit-btn">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="row">
+                    <div class="col-12">
+                        &copy; 2021 - ALESHA SOLUTIONS LTD.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+</body>
+
 </html>
